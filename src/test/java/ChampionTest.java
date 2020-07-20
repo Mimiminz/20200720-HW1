@@ -69,18 +69,23 @@ public class ChampionTest {
     //부동소수점 범위 closeTo 테스트
     @Test
     public void testForFloatingPoint() {
+        //assertThat(3.14, closeTo(3, 0.2));
         assertThat(3.14, closeTo(3, 0.2));
     }
 
     //anything 테스트
     @Test
     public void shouldNotErrorGetReference() {
+        //assertThat(championList.get(2), anything());
         assertThat(championList.get(2), anything());
     }
 
     //객체 크기 검증 테스트 hasSize
     @Test
     public void shouldChampionCountFive() {
+        //assertTrue(championList.size() == 5);
+        //assertThat(championList.size(), is(5));
+        //assertThat(championList, hasSize(5));
         assertTrue(championList.size() == 5);
         assertThat(championList.size(), is(5));
         assertThat(championList, hasSize(5));
@@ -90,6 +95,9 @@ public class ChampionTest {
     @Test
     public void shouldSupportChampionIsTaric() {
         Champion supportChamp = new Champion("타릭", "바텀");
+        //assertThat("타릭", is(supportChamp.getName()));
+        //assertThat("타릭", is(equalTo(supportChamp.getName())));
+        //assertThat("타릭", equalTo(supportChamp.getName()));
         assertThat("타릭", is(supportChamp.getName()));
         assertThat("타릭", is(equalTo(supportChamp.getName())));
         assertThat("타릭", equalTo(supportChamp.getName()));

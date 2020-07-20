@@ -19,6 +19,7 @@ UpperCaseCounterTest {
         int numberOfUpperCaseCharactersInString = upperCaseCounter.getNumberOfUpperCaseCharactersInString(str);
 
         assertThat(numberOfUpperCaseCharactersInString, is(0));
+        //assertThat(numberOfUpperCaseCharactersInString, is(40));
     }
 
     //반겂울 전달했을 때 0을 리턴하는지에 대한 테스트 작성

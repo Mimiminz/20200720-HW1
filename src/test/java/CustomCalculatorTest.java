@@ -18,7 +18,9 @@ public class CustomCalculatorTest {
         int result = customCalculator.added(10,15);
         /* 이곳에 테스트 코드를 작성하세요. */
         assertTrue(result == 25);
+        //assertTrue(true);
         assertFalse(result == 10);
+        //assertFalse(false);
         assertThat(result, is(25));
         System.out.println("result :: " + result);
     }

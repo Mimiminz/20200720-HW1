@@ -101,7 +101,7 @@ public class ChampionTest {
         assertThat(championList.get(0), hasProperty("name"));
         assertThat(championList.get(0), hasProperty("position"));
         assertThat(championList.get(0), hasProperty("position", equalTo("탑")));
-        //assertThat(championList.get(2),hasProperty("spot"));
+        //assertThat(championList.get(2),hasProperty("level"));
         assertThat(championList.get(3), hasProperty("position",equalTo("바텀")));
     }
 
